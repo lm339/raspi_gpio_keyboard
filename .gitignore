@@ -42,6 +42,8 @@
 *.idb
 *.pdb
 
+sftp-config.json
+
 # Kernel Module Compile Results
 *.mod*
 *.cmd

@@ -1,0 +1,5 @@
+#include <linux/input.h> 
+
+#define KEY_COUNT	10
+#define KEY_GPIO_LIS {21,22,23,24,25,26,27,28,29,3}
+#define KEY_VALUE_LIS {KEY_Q,KEY_W,KEY_R,KEY_E,KEY_RIGHT,KEY_DOWN,KEY_BACKSPACE,KEY_LEFT,KEY_UP,KEY_ENTER}                
