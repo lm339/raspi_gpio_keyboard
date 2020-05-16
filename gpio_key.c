@@ -39,7 +39,7 @@ unsigned char key_io_init(void)
 {
 	wiringPiSetup();
 
-	for(unsigned char i=0;i<10;i++)
+	for(unsigned char i=0;i<KEY_COUNT;i++)
 	{
 		pinMode(key_gpio_list[i],INPUT);       //配置1脚为输入
 		pullUpDnControl(key_gpio_list[i],PUD_UP);  //将1脚上拉到3.3v	
@@ -60,7 +60,7 @@ unsigned char key_logic(void)
 	}
 	int i = 0;
 	unsigned int temp =0;
-	for(i=0;i<10;i++)
+	for(i=0;i<KEY_COUNT;i++)
 	{
 		temp = 0x00000001 << i;
 		if(key_down & temp)
